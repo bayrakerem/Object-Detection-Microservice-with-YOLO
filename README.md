@@ -2,7 +2,7 @@
 
 A high-performance, Dockerized microservice for object detection using YOLO (You Only Look Once) models converted to ONNX format. This microservice provides a REST API for detecting objects in images with optional label filtering.
 
-## 🚀 Features
+## Features
 
 - **Fast Object Detection**: Uses optimized YOLO model in ONNX format
 - **REST API**: Simple HTTP endpoints for image upload and detection
@@ -13,7 +13,7 @@ A high-performance, Dockerized microservice for object detection using YOLO (You
 - **Comprehensive Testing**: Full test suite with multiple scenarios
 - **Production Ready**: Includes health checks, logging, and monitoring
 
-## 📋 API Endpoints
+## API Endpoints
 
 ### Core Endpoints
 
@@ -50,7 +50,7 @@ A high-performance, Dockerized microservice for object detection using YOLO (You
 }
 ```
 
-## 🛠️ Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -91,7 +91,7 @@ curl -X POST "http://localhost:8000/detect" \
   -F "file=@test_images/sample.jpg"
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Automated Testing
 
@@ -134,7 +134,7 @@ The project includes comprehensive test images and scenarios:
 | No File | HTTP 422 error |
 | Performance | < 2 seconds per request |
 
-## 🏗️ Architecture & Design Decisions
+## Architecture & Design Decisions
 
 ### Technology Stack
 
@@ -196,7 +196,7 @@ The project includes comprehensive test images and scenarios:
                        └─────────────────┘
 ```
 
-## 🔧 Development Setup
+## Development Setup
 
 ### Local Development
 
@@ -239,12 +239,12 @@ python scripts/convert_yolo_to_onnx.py --output-path custom/path/model.onnx
 5. Test inference capabilities
 
 **Conversion Benefits:**
-- 📉 Reduced model size (typically 10-30% smaller)
-- ⚡ Faster inference (optimized operations)
-- 🔧 Better deployment compatibility
-- 🎯 Consistent results across platforms
+- Reduced model size (typically 10-30% smaller)
+- Faster inference (optimized operations)
+- Better deployment compatibility
+- Consistent results across platforms
 
-## 🐳 Docker Configuration
+## Docker Configuration
 
 ### Dockerfile Optimizations
 
@@ -273,7 +273,7 @@ deploy:
       memory: 512M
 ```
 
-## 📊 Performance Considerations
+## Performance Considerations
 
 ### Optimization Strategies
 
@@ -304,7 +304,7 @@ deploy:
 - **Concurrent Requests**: Supports 10+ simultaneous requests
 - **Memory Usage**: ~500MB-1GB depending on model size
 
-## 🔍 Monitoring & Logging
+## Monitoring & Logging
 
 ### Health Checks
 
@@ -319,7 +319,7 @@ deploy:
 - **Request Tracking**: Unique request IDs for tracing
 - **Performance Metrics**: Response times and error rates
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Deployment
 
@@ -356,7 +356,7 @@ TIMEOUT=30
 MAX_FILE_SIZE=50MB
 ```
 
-## 🧩 API Usage Examples
+## API Usage Examples
 
 ### Python Example
 
@@ -484,4 +484,4 @@ For questions and support:
 
 ---
 
-**Built with ❤️ for efficient object detection** 
+**Built for efficient object detection** 
